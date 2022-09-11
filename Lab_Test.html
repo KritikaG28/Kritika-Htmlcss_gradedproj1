@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Lab_Test.css">
+    <title>Lab Test Form</title>
+</head>
+
+<body>
+    <div class="flexContainer">
+        <div class="box">
+            <form id="a-form" action="Home.html">
+                <h3>1. Your Contact Details</h3>
+                <input type="text" name="Full_name" placeholder="Full Name" required>
+                <input type="text" name="Patient_Id" placeholder="Patient Id if exists"><br>
+                <input type="text" name="Contact_Id" placeholder="Contact Number" required>
+                <input type="email" name="Email_Id" placeholder="Email Id" required><br>
+
+                <h3>2. Address</h3>
+                <input type="text" name="housenum" placeholder="H-No" required>
+                <input type="text" name="street" placeholder="Street" required><br>
+                <input type="text" name="area" placeholder="Area" required><br>
+                <label for="district">District</label>
+                <select id="district" name="District">
+                    <option value="Choose" selected>Choose </option>
+                    <option value="Ahmednagar">Ahmednagar</option>
+                    <option value="Akola">Akola</option>
+                    <option value="Amravati">Amravati</option>
+                    <option value="Aurangabad">Aurangabad</option>
+                </select>
+
+                <h3>Choose the Test Type.</h3>
+                <div class="alert">
+                    <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+                    Check atleast one box without fail
+                </div>
+                <input type="checkbox" id="test1" name="test1" value="CBC">
+                <label for="test1">CBC</label><br>
+                <input type="checkbox" id="test2" name="test2" value="Complete Urine">
+                <label for="test2">Complete Urine</label><br>
+                <input type="checkbox" id="test3" name="test3" value="Lipid Profile">
+                <label for="test3">Lipid Profile</label><br>
+                <input type="checkbox" id="test4" name="test4" value="Thyroid Stimulating Hormone(TSH)">
+                <label for="test4">Thyroid Stimulating Hormone(TSH)</label><br>
+                <input type="checkbox" id="test5" name="test5" value="Glucose Test">
+                <label for="test5">Glucose Test</label><br>
+
+                <h3>Do you want a hard copy of the report also?</h3>
+                <input type="radio" name="yes-no" value="yes">
+                Yes
+                </input>
+                <input type="radio" name="yes-no" value="no">
+                No
+                </input><br>
+
+                <h3>Select Your Comfortable Date and Time</h3>
+                <input type="date" name="date" placeholder="Date" required>
+                <input type="time" name="time" placeholder="Time" required><br>
+            </form>
+        </div>
+        <div>
+            <img src="./Images/Lab-Test/lab-test.jpg" class="ribbon" alt="" />
+        </div>
+    </div>
+    <button type="reset" form="a-form">Reset</button>
+    <button type="submit" form="a-form">Submit</button>
+    </div>
+</body>
+
+</html>

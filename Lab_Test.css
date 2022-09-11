@@ -1,0 +1,88 @@
+.flexContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: auto;
+  height: 550px;
+  position: relative;
+  margin: 10px;
+  overflow-y: scroll;
+  border: 0.5px solid;
+  box-shadow: 5px 10px 8px #888888;
+}
+
+img {
+  height: 550px;
+  position: fixed;
+  width: fit-content;
+}
+
+label {
+  padding-left: 10px;
+  font-size: 20px;
+  padding-top: 8px;
+}
+
+.box {
+  height: 500px;
+  padding: 10px;
+  margin-left: 1%;
+}
+
+.box input {
+  margin-bottom: 20px;
+  width: 200px;
+  box-sizing: border-box;
+  box-shadow: none;
+  border: none;
+  border-bottom: 2px solid #999;
+  outline: #fff;
+  padding-left: 10px;
+  height: 26px;
+}
+
+button {
+  display: inline-block;
+  margin-left: 200px;
+  width: 80px;
+  border-radius: 4px;
+  height: 30px;
+  color: white;
+  font-size: 18px;
+  border: none;
+  background-color: rgb(175, 102, 243);
+}
+
+.box form div {
+  position: relative;
+}
+
+.box form div label {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  color: #999;
+  transition: 0.5s;
+  pointer-events: none;
+}
+
+.alert {
+  padding: 20px;
+  background-color: #f44336;
+  color: white;
+}
+
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: black;
+}
